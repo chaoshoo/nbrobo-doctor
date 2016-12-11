@@ -12,5 +12,5 @@ public class Config {
 
     public static final String APP_KEY = "4ea9b0b6f3214433afffca370c88ca8c";
 
-    public static final String URL = "http://api.nbrobo.com/mobile/interface.do?content=";
+    public static final String URL = "http://121.43.123.125:84/mobile/interface.do?content=";
 }
