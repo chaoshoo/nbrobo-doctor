@@ -540,6 +540,7 @@ public class MultiChatActivity extends NRtcActivity implements NRtcCallback, Vie
         nrtc.joinChannel(Config.APP_KEY, token, channelName, uid,
                 videoEnabled ? NRtcConstants.RtcMode.VIDEO : NRtcConstants.RtcMode.AUDIO);
 
+        Log.d(TAG, "App key: " + Config.APP_KEY + "; channel name: " + channelName + " uid: " + uid);
 
         User user = new User();
         user.uid = uid;
