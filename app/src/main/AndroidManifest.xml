@@ -13,6 +13,8 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
@@ -49,7 +51,12 @@
 
         <activity android:name=".RemoteActivity" android:screenOrientation="landscape"></activity>
 
-
+        <activity android:name="com.nbrobo.scan.capture.CaptureActivity"
+            android:screenOrientation="sensorLandscape"
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="9a12f3bf5e7e19cc71c89edf4688aa256215d8e6" />
